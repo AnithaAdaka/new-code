@@ -28,6 +28,6 @@ jobs:
     - run: npm ci
     - run: |
          touch .env
-         echo "${{secrets.HOLY_ENV_FILE}}" >.env
+         echo "${{secrets.HOLY_ENV_FILE}}" > .env
     - run: npm force install
     - run: npm start
